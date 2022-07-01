@@ -1,0 +1,149 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  
+  /*
+  Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+  xs: (max-width: 575px)
+  sm: (min-width: 576px) and (max-width: 767px)
+  md: (min-width: 768px) and (max-width: 991px)
+  lg: (min-width: 992px) and (max-width: 1199px)
+  xl: (min-width: 1200px)
+  
+  Barvy
+  růžová: #c5308a
+  světle šedá: #f0f0f0
+  hneda 
+  */
+  
+  /* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+  
+  
+  /* TYPOGRAFIE - p9smo, nadpisy, ... */
+  
+body {
+  /* ve3ker7 text na webu bude písmem Lora */
+  /* font-family:   'Shadows Into Light', cursive; */  /*'Lora', serif;*/
+  font-family: 'Amatic SC', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* všechny nadpisy budou netučnou kurzívou */
+  font-weight: bold;
+  color:rgb(170, 88, 22)
+}
+  
+
+p{
+  font-size: 30px;
+}
+
+
+/* MENU */  
+.navbar-dark .navbar-nav .nav-link {
+  background-color: rgb(170, 88, 22);
+  color: #fff;
+  padding: 1rem;
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: rgb(184, 202, 159); 
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+.navbar-custom {
+  background-color:  rgb(170, 88, 22);
+  color: rgb(184, 202, 159);  
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+
+/* SEKCE */
+.sekce {
+  /* všechny sekce mají odsazení shora a zespodu */
+  padding-top: 55px;
+  padding-bottom: 85px;
+}
+
+.sekce-pruh {
+  /* všechny sekce mají odsazení shora a zespodu */
+  padding-top: 55px;
+  /* padding-bottom: 55px; */
+  background-color: rgb(184, 202, 159); 
+}
+
+
+/* PATICKA */
+
+.sekce-footer {
+  background-color:  rgb(170, 88, 22); 
+  color: black;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 15px !important;
+}
+
+
+/* IMAGES */
+.cropped {
+  /* width: 150px; */
+  height: 63%; /*650px;  height of container */
+  overflow: hidden;
+}
+
+.cropped img {
+  /* margin: -420px 0px 0px 0px;*/
+  margin: -22% 0% -16% 0%;
+}
+
+.zoom:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column-foto {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+.column-foto img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row-foto:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+
+a {
+  color: rgb(184, 202, 159);
+  background-color: transparent;
+  text-decoration: none;
+}
