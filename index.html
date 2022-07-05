@@ -12,8 +12,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 	<!-- Font -->
-	<!--<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	
 	<!-- naše CSS styly  musi byt az za boostrap stylem aby ho prepsal -->
 	<link rel="stylesheet" href="css/style.css">
@@ -23,57 +25,29 @@
 </head>
 <body>
 
-<!-- START: MENU -->
-<div class="container">
-	<nav class="navbar navbar-expand-lg navbar-custom navbar-dark fixed-top">
-		<div class="container"> 
-			<a class="navbar-brand" href="#">
-				<!-- Houpajda -->
-				<img 
-					src="pic/logo_small.png" 
-					alt="Logo Houpajdy" 
-					style="width:30%">
-				
-			</a>
+<!-- START: HERO -->
+<section class="hero">
+	<img class="hero--img" src="pic/houpajda_02.JPG" alt="houpajda drevena hneda" >
+</section>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				
-			<div class="collapse navbar-collapse" id="navbarNav">
-				
-				<ul class="navbar-nav ml-auto"> 
-					<li class="nav-item">
-					<a class="nav-link" href="#houpajdaNaMiru">...Houpajda na míru</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#fotogalerie">...Hotové kousky</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#oNas">...O nás</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#dejNamVedet">...Dej nám vědět</a>
-					</li>
-				</ul>
-			</div>
+
+<!-- START: HEADER -->
+<header class="header">
+	
+
+	<nav class="navigation">
+		<a class="navigation--item" href="#houpajdaNaMiru">...Houpajda na míru</a>
+		<a class="navigation--item" href="#fotogalerie">...Hotové kousky</a>
+
+		<div class="header--logo">
+			<img class="header--img" src="pic/logo_small.png" alt="Logo Houpajdy" >
 		</div>
+		
+		<a class="navigation--item" href="#oNas">...O nás</a>
+		<a class="navigation--item" href="#dejNamVedet">...Dej nám vědět</a>
 	</nav>
-</div>
-<!-- END: MENU -->
-
-
-
-<!-- START: TITLE PICTURE -->
-<div id="imageControls">
-	<div class="carousel-inner">
-		<div class="carousel-item active cropped">
-			<img src="pic/houpajda_02.JPG" class="d-block w-100 img-responsive" alt="houpajda drevena hneda" >
-		</div>
-	</div>
-</div>
-<!-- END: TITLE PICTURE -->
-
+</header>
+<!-- END: HEADER -->
 
 
 <!-- START: Houpajda na míru  -->	
@@ -81,28 +55,24 @@
 	<div class = "container-fluid">
 		<h2 class="text-center" id="houpajdaNaMiru">...Houpajda na míru</h2>
 		<div class = "row">
-			<div class = "col text-center">
+			<div class = "col text-center text-box">
 
-			<p> 
-				Nabízíme velmi pohodlnou houpačku s tvarovaným sedákem, vyrobenou z kvalitního vysušeného smrkového dřeva. 
-			</p>
+				<p>Nabízíme velmi pohodlnou houpačku s tvarovaným sedákem, vyrobenou z kvalitního vysušeného smrkového dřeva. </p>
 
-			<p>
-				Možnost výberu z 6 barev, které lze kombinovat.
-			</p>
-			<ul class = "no-bullets">
-				<li style="font-size:25px">kaštan</li>
-				<li style="font-size:25px">pinie</li>
-				<li style="font-size:25px">palisandr</li>
-				<li style="font-size:25px">bezbarvá lazure</li>
-				<li style="font-size:25px">bílá</li>
-				<li style="font-size:25px">šedá</li>
-			</ul>			
-			<br>
-			<p>
-				Snadardní celková délka je 200 cm z toho 150 cm odpovída délce lavice.
-			</p>
-			<br>
+				<p>Možnost výběru z 6 barev, které lze kombinovat:</p>
+
+				<ul class = "no-bullets">
+					<li class="item">kaštan</li>
+					<li class="item">pinie</li>
+					<li class="item">palisandr</li>
+					<li class="item">bezbarvá lazure</li>
+					<li class="item">bílá</li>
+					<li class="item">šedá</li>
+				</ul>			
+
+				<p>Standardní celková délka je 200 cm z toho 150 cm odpovída délce lavice.
+				</p>
+
 			</div> 
 		</div>
 	</div>
@@ -156,12 +126,14 @@
 				<img class="rounded-circle mb-3 p-1 w-50 kadernice" src="pic/tatka.jpg" alt="tatka">
 				<h3>Tatka</h3>
 				<p>Kuku kuku kuku. </p>
+				<p>Telefon: +42 000 000 000 </p>
 			</div>
 
 			<div class="col-md-6 text-center">
 				<img class="rounded-circle mb-3 p-1 w-50 kadernice" src="pic/strejda.jpg" alt="strejda">
 				<h3>Strejda</h3>
 				<p>Blah blah blah.</p>
+				<p>Telefon: +42 000 000 000</p>
 			</div>
 		</div>
 
@@ -175,18 +147,22 @@
 	<div class = "container-fluid">
 		<h2 class="text-center" id="dejNamVedet">...Dej nám vědět</h2>
 		<div class = "row">
-			<div class = "col md-6 text-right" style="font-size: 30px">
-				Telefon Tatka: +42 000 000 000 <br>
-				Telefon Strejda: +42 000 000 000 <br>
+			<div class = "col md-6" style="font-size: 30px">
+				<table style="margin: 0 auto">
+					<tr>
+						<td class="text-right">Email:</td>
+						<td><a class="text-left" style= "color:rgb(170, 88, 22)" 
+							href="mailto:hopajda@email.cz">hopajda@email.cz</a></td>
+					</tr>
+					<tr>
+						<td class="text-right">Facebook:</td>
+						<td><a class="text-left" style="color:rgb(170, 88, 22)"
+							href="https://m.facebook.com/Houpajda-115010113686627/?tsid=0.9674397070726382&source=result" target="_blank">
+							Houpajda</a></td>
+					</tr>
+					
+				</table>
 				
-				Email:  
-				<a style= "color:rgb(170, 88, 22)" 
-					href="mailto:hopajda@email.cz">hopajda@email.cz</a><br>
-				
-					Facebook:  
-				<a style="color:rgb(170, 88, 22)"
-					href="https://m.facebook.com/Houpajda-115010113686627/?tsid=0.9674397070726382&source=result" target="_blank">
-					Houpajda</a><br>
 			</div> 
 
 			<div class="col md-6 text-center">

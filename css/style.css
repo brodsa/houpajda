@@ -29,8 +29,6 @@ html {
   /* TYPOGRAFIE - p9smo, nadpisy, ... */
   
 body {
-  /* ve3ker7 text na webu bude písmem Lora */
-  /* font-family:   'Shadows Into Light', cursive; */  /*'Lora', serif;*/
   font-family: 'Amatic SC', cursive;
 }
 
@@ -43,10 +41,16 @@ h5 {
   font-weight: bold;
   color:rgb(170, 88, 22)
 }
+
+h2{
+  padding: 20px 0;
+}
   
 
-p{
-  font-size: 30px;
+p, 
+.item{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 
@@ -76,15 +80,12 @@ p{
 
 /* SEKCE */
 .sekce {
-  /* všechny sekce mají odsazení shora a zespodu */
-  padding-top: 55px;
-  padding-bottom: 85px;
+  padding-top: 65px;
+  margin-bottom: 20px;
 }
 
 .sekce-pruh {
-  /* všechny sekce mají odsazení shora a zespodu */
-  padding-top: 55px;
-  /* padding-bottom: 55px; */
+  padding-top: 65px;
   background-color: rgb(184, 202, 159); 
 }
 
@@ -139,6 +140,7 @@ ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+  margin-bottom: 20px;
 }
 
 
@@ -146,4 +148,10 @@ a {
   color: rgb(184, 202, 159);
   background-color: transparent;
   text-decoration: none;
+}
+
+.text-box{
+  max-width: 900px;
+  margin: 30px auto;
+
 }
