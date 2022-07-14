@@ -17,9 +17,9 @@ html {
   lg: (min-width: 992px) and (max-width: 1199px)
   xl: (min-width: 1200px)
   
-  Barvy
-  růžová: #c5308a
-  světle šedá: #f0f0f0
+  colors
+  graun: color:rgb(170, 88, 22)
+  green: rgb(184, 202, 159);
   hneda 
   */
   
@@ -32,126 +32,3 @@ body {
   font-family: 'Amatic SC', cursive;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  /* všechny nadpisy budou netučnou kurzívou */
-  font-weight: bold;
-  color:rgb(170, 88, 22)
-}
-
-h2{
-  padding: 20px 0;
-}
-  
-
-p, 
-.item{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-}
-
-
-/* MENU */  
-.navbar-dark .navbar-nav .nav-link {
-  background-color: rgb(170, 88, 22);
-  color: #fff;
-  padding: 1rem;
-  font-size: 25px !important;
-  font-weight: bold;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
-  background-color: rgb(184, 202, 159); 
-  font-size: 25px !important;
-  font-weight: bold;
-}
-
-.navbar-custom {
-  background-color:  rgb(170, 88, 22);
-  color: rgb(184, 202, 159);  
-  font-size: 25px !important;
-  font-weight: bold;
-}
-
-
-/* SEKCE */
-.sekce {
-  padding-top: 65px;
-  margin-bottom: 20px;
-}
-
-.sekce-pruh {
-  padding-top: 65px;
-  background-color: rgb(184, 202, 159); 
-}
-
-
-/* PATICKA */
-
-.sekce-footer {
-  background-color:  rgb(170, 88, 22); 
-  color: black;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  padding-top: 15px !important;
-}
-
-
-/* IMAGES */
-.cropped {
-  /* width: 150px; */
-  height: 63%; /*650px;  height of container */
-  overflow: hidden;
-}
-
-.cropped img {
-  /* margin: -420px 0px 0px 0px;*/
-  margin: -22% 0% -16% 0%;
-}
-
-.zoom:hover {
-  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-
-/* Create two equal columns that floats next to each other */
-.column-foto {
-  float: left;
-  width: 33%;
-  padding: 10px;
-}
-
-.column-foto img {
-  margin-top: 12px;
-}
-
-/* Clear floats after the columns */
-.row-foto:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-  margin-bottom: 20px;
-}
-
-
-a {
-  color: rgb(184, 202, 159);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.text-box{
-  max-width: 900px;
-  margin: 30px auto;
-
-}
